@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    padding: 50vh;
+}
+
+
+section a {
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#red {
+    background-color: rgb(204, 43, 43);
+}
+
+#yellow {
+    background-color: rgb(236, 236, 64);
+}
+
+#green {
+    background-color: green;
+}
+
+
+.animation {
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes arrow  {
+    0%{
+      transform: translate(0px, 0px);
+    }
+  
+    50% {
+      transform: translate(0px, 35px);
+      color: rgba(67, 37, 37, 0.379);
+    }
+  
+    100% {
+      transform: translate(0px, 0px);
+    }
+  }
+  
